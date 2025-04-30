@@ -22,7 +22,7 @@ public class TestFixturesPage extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-        URL fxmlLocation = getClass().getResource("/org/example/demo/Fixtures.fxml");
+        URL fxmlLocation = getClass().getResource("/org/example/demo/FixturesPage.fxml");
         if (fxmlLocation == null) {
             throw new RuntimeException("FXML file not found at /org/example/demo/Fixtures.fxml");
         }

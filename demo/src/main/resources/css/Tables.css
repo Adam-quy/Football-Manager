@@ -136,29 +136,19 @@
 }
 
 /*Main*/
-#Calendar{
-    -fx-background-color: #fff;
+
+.statement{
+    -fx-padding: 8px 15px 0 20px;
+    -fx-spacing: 10px;
 }
 
-.match-row:hover{
-    -fx-cursor: hand;
-    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, #4895ef, #7209b7);
+.more-options:hover{
+    -fx-text-fill:#7209b7;
 }
-
+/*.ranking-status{*/
+/*    -fx-border-color: red;*/
+/*    -fx-border-radius: 0 0 20px 0;*/
+/*    -fx-background-color: red;*/
+/*    -fx-background-radius: 0 0 20px 0;*/
+/*}*/
 /*Close*/
-.footer{
-    -fx-background-color: #3a0ca3;
-}
-
-.btn-footer{
-    -fx-background-color: #3a0ca3;
-    -fx-text-fill:#f8f7ff ;
-    -fx-font-weight: bold;
-}
-
-.btn-footer:hover{
-    -fx-text-fill:#f72585 ;
-    -fx-underline: true;
-    -fx-cursor: hand;
-}
-

@@ -51,6 +51,21 @@
 /*Content*/
 
 /*Open*/
+
+
+.open{
+    -fx-background-color: linear-gradient(to right bottom, #33ccff, #4d66ff);
+
+    /*-fx-background-image:*/
+    /*        url("images/SVG/bigwave.svg"),*/
+    /*        url("images/SVG/smallwave.svg");*/
+    /*-fx-background-repeat: no-repeat, no-repeat, no-repeat;*/
+    /*-fx-background-size: 100% 100%, 100% 100%, 120% 100%;*/
+    /*-fx-background-position: 0 0, 0 0, -20px 0;*/
+    /*-fx-padding: 10px;*/
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);*/
+}
+
 .notification{
     -fx-background-color: #fff;
     -fx-background-radius: 10px;
@@ -69,19 +84,45 @@
     -fx-font-family: "Arial Black";
 }
 
-.add_box{
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
+/*.add_box{*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-border-color: transparent;*/
+/*}*/
+
+/*.add_box:hover{*/
+/*    -fx-text-fill:#7209b7;*/
+/*    -fx-effect: innershadow(gaussian, #7209b7, 100, 0.8, 0, 0);*/
+/*    -fx-cursor: hand;*/
+/*}*/
+
+
+.search-container {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-spacing: 5px;
 }
 
-.add_box:hover{
-    -fx-text-fill:#7209b7;
-    -fx-effect: innershadow(gaussian, #7209b7, 100, 0.8, 0, 0);
+.search-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill: #999;
+    -fx-font-size: 14px;
+}
+
+.search-btn {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
     -fx-cursor: hand;
 }
 
+/*Main*/
+
 .filter_box{
-    -fx-padding: 2px 5px;
+    -fx-padding: 15px 15px;
 }
 
 .filter_element{
@@ -135,32 +176,7 @@
     -fx-cursor: hand;
 }
 
-/*Main*/
-#Calendar{
+
+.player-container{
     -fx-background-color: #fff;
 }
-
-.match-row:hover{
-    -fx-cursor: hand;
-    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, #4895ef, #7209b7);
-}
-
-
-
-/*Close*/
-.footer{
-    -fx-background-color: #3a0ca3;
-}
-
-.btn-footer{
-    -fx-background-color: #3a0ca3;
-    -fx-text-fill:#f8f7ff ;
-    -fx-font-weight: bold;
-}
-
-.btn-footer:hover{
-    -fx-text-fill:#f72585 ;
-    -fx-underline: true;
-    -fx-cursor: hand;
-}
-

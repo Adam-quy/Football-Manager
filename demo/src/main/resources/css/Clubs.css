@@ -1,0 +1,333 @@
+.root {
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+}
+
+/*Sidebar*/
+.container{
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent; /* Quan trọng */
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+}
+
+.sidebar_dash{
+    -fx-background-color: #fff;
+    -fx-border-color: #d5bdaf;
+    -fx-border-radius: 20px 0 0 20px;
+    -fx-background-radius: 20px 0 0 20px;
+    -fx-border-width: 1px;
+}
+
+.inner_pane{
+    -fx-background-color: transparent;
+    -fx-border-color: #8338ec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-alignment: center;
+    -fx-text-fill: #3a0ca3;
+}
+.btn_sidebar{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-graphic-text-gap: 20px;
+    -fx-alignment: center-left; /* Căn trái để các phần tử thẳng hàng */
+    -fx-padding: 0 25px 0 25px; /* Thêm padding trái để tạo khoảng cách từ cạnh */
+    -fx-text-fill: #3a0ca3;
+}
+
+.button_effect{
+    -fx-effect: innershadow(gaussian, #3a0ca3, 100, 0.8, 0, 0);
+}
+
+.btn_sidebar:hover{
+    -fx-border-width: 0 0 0 4px;
+    -fx-border-color: #560bad;
+    -fx-background-color: #e3d5ca;
+}
+
+/*Content*/
+
+/*Open*/
+
+
+.open{
+    -fx-background-color: linear-gradient(to right bottom, #33ccff, #4d66ff);
+
+    /*-fx-background-image:*/
+    /*        url("images/SVG/bigwave.svg"),*/
+    /*        url("images/SVG/smallwave.svg");*/
+    /*-fx-background-repeat: no-repeat, no-repeat, no-repeat;*/
+    /*-fx-background-size: 100% 100%, 100% 100%, 120% 100%;*/
+    /*-fx-background-position: 0 0, 0 0, -20px 0;*/
+    /*-fx-padding: 10px;*/
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);*/
+}
+
+.notification{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    /*-fx-border-color: #000;*/
+    /*-fx-border-radius: 10px;*/
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.5, 0.0, 0.0);
+}
+
+.notification:hover{
+    -fx-background-color: #e7ecef;
+}
+
+.title{
+    -fx-text-fill: #3a0ca3;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+    -fx-font-family: "Arial Black";
+}
+
+/*.add_box{*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-border-color: transparent;*/
+/*}*/
+
+/*.add_box:hover{*/
+/*    -fx-text-fill:#7209b7;*/
+/*    -fx-effect: innershadow(gaussian, #7209b7, 100, 0.8, 0, 0);*/
+/*    -fx-cursor: hand;*/
+/*}*/
+
+
+.search-container {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-spacing: 5px;
+}
+
+.search-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill: #999;
+    -fx-font-size: 14px;
+}
+
+.search-btn {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+/*Main*/
+
+.filter_box{
+    -fx-padding: 15px 15px;
+}
+
+.filter_element{
+    -fx-spacing: 4px;
+}
+
+.filter_text{
+    -fx-text-fill:#3a0ca3;
+    /*-fx-background-color: transparent;*/
+    /*-fx-font-size: 12px;*/
+    -fx-padding: 0 0  0 10px;
+}
+
+.menu-button{
+    -fx-background-color: transparent;
+    /*-fx-text-fill: #3a0ca3;*/
+    /*-fx-font-weight: bold;*/
+    -fx-font-size: 14px;
+    /*-fx-padding: 5 0;*/
+    -fx-border-color: #9381ff;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+}
+
+.menu-button:hover{
+    -fx-text-fill:#7209b7;
+    -fx-cursor: hand;
+}
+
+.menu-item {
+    -fx-font-size: 13px;
+    -fx-text-fill: #3a0ca3 !important;
+    -fx-padding: 6 12;
+    -fx-border-width: none;
+    -fx-background-color: #f8f7ff;
+}
+
+/* Hover khi di chuột vào menu item */
+.menu-item:hover {
+    -fx-text-fill: #7209b7;
+}
+
+.reset_button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #3a0ca3 ;
+
+}
+.reset_button:hover{
+    -fx-text-fill:#7209b7;
+    -fx-effect: innershadow(gaussian, #7209b7, 100, 0.8, 0, 0);
+    -fx-cursor: hand;
+}
+
+
+.grid-pane{
+    -fx-background-color: white;
+}
+
+.arsenal-color { -fx-background-color: #ef0107; }
+.aston-villa-color { -fx-background-color: #670E36; }
+.bournemouth-color { -fx-background-color: #DA291C; }
+.brentford-color { -fx-background-color: #e30613; }
+.brighton-and-hove-albion-color { -fx-background-color: #62b6cb; }
+.chelsea-color { -fx-background-color: #014f86; }
+.crystal-palace-color { -fx-background-color: #118ab2; }
+.everton-color { -fx-background-color: #4361ee; }
+.fulham-color { -fx-background-color: #000000; }
+.ipswich-town-color { -fx-background-color: #b5179e; }
+.leicester-city-color { -fx-background-color: #3f37c9; }
+.liverpool-color { -fx-background-color: #fe5f55; }
+.manchester-city-color { -fx-background-color: #6CABDD; }
+.manchester-united-color { -fx-background-color: #DA291C; }
+.newcastle-united-color { -fx-background-color: #241F20; }
+.nottingham-forest-color{ -fx-background-color: #e76f51; }
+.southampton-color{ -fx-background-color: #ae2012;}
+.tottenham-hotspur-color{-fx-background-color: #cad2c5;}
+.west-ham-united-color{-fx-background-color: #621708;}
+.wolverhampton-wanderer-color{-fx-background-color: #f6aa1c;}
+
+
+/*.arsenal-card:hover { -fx-background-color: #EF0107; }*/
+/*.aston-villa-card:hover { -fx-background-color: #670E36; }*/
+/*.bournemouth-card:hover { -fx-background-color: #DA291C; }*/
+/*.brentford-card:hover { -fx-background-color: #e30613; }*/
+/*.brighton-&-hove-albion-card:hover { -fx-background-color: #0057B8; }*/
+/*.chelsea-card:hover { -fx-background-color: #034694; }*/
+/*.crystal-palace-card:hover { -fx-background-color: #1B458F; }*/
+/*.everton-card:hover { -fx-background-color: #003399; }*/
+/*.fulham-card:hover { -fx-background-color: #000000; }*/
+/*.ipswich-town-card:hover { -fx-background-color: #FF0000; }*/
+/*.leicester-city-card:hover { -fx-background-color: #003090; }*/
+/*.liverpool-card:hover { -fx-background-color: #C8102E; }*/
+/*.manchester-city-card:hover { -fx-background-color: #6CABDD; }*/
+/*.manchester-united-card:hover { -fx-background-color: #DA291C; }*/
+/*.newcastle-united-card:hover { -fx-background-color: #241F20; }*/
+/*.nottingham-forest-card:hover{ -fx-background-color: #e76f51; }*/
+/*.southampton-card:hover{ -fx-background-color: #ae2012;}*/
+/*.tottenham-hotspur-card:hover{-fx-background-color: #cad2c5;}*/
+/*.west-ham-united-card:hover{-fx-background-color: #621708;}*/
+/*.wolverhampton-wanderer-card:hover{-fx-background-color: #f6aa1c;}*/
+.team-card{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-width: none;
+}
+
+.team-name{
+    -fx-font-weight: bold;
+    -fx-text-fill: #3a0ca3;
+    -fx-font-size: 14px;
+}
+
+.arrow-icon{
+    -fx-text-fill: #3a0ca3;
+    -fx-font-size: 14px;
+}
+
+
+.team-card:hover .team-name,
+.team-card:hover .arrow-icon {
+    -fx-text-fill: white;
+}
+
+.arsenal-card:hover {
+    -fx-background-color: linear-gradient(from 50% 25% to 100% 100%, #ef0107, #8b0000);;
+}
+
+.aston-villa-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #670E36, #3c0020);
+}
+
+.bournemouth-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #DA291C, #8b0000);
+}
+
+.brentford-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #e30613, #b5179e);
+}
+
+.brighton-and-hove-albion-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #62b6cb, #001f5c);
+}
+
+.chelsea-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #014f86, #001f5c);
+}
+
+.crystal-palace-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #118ab2, #001f3f);
+}
+
+.everton-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #4361ee, #001a66);
+}
+
+.fulham-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #000000, #434343);
+}
+
+.ipswich-town-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #b5179e, #990000);
+}
+
+.leicester-city-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #3f37c9, #000066);
+}
+
+.liverpool-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #fe5f55, #800000);
+}
+
+.manchester-city-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #6CABDD, #1a75ff);
+}
+
+.manchester-united-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #DA291C, #8b0000);
+}
+
+.newcastle-united-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #241F20, #000000);
+}
+
+.nottingham-forest-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #e76f51, #8b3a2f);
+}
+
+.southampton-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #ae2012, #610000);
+}
+
+.tottenham-hotspur-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #cad2c5, #a3b18a);
+}
+
+.tottenham-hotspur-card:hover .team-name,
+.tottenham-hotspur-card:hover .arrow-icon {
+    -fx-text-fill: #3a0ca3;
+}
+
+.west-ham-united-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #621708, #2e0500);
+}
+
+.wolverhampton-wanderer-card:hover {
+    -fx-background-color: linear-gradient(to right bottom, #f6aa1c, #d48d00);
+}
+

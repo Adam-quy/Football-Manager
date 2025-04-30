@@ -23,9 +23,9 @@ public class TestResultsPage extends Application{
     }
     @Override
     public void start(Stage stage) throws Exception {
-        URL fxmlLocation = getClass().getResource("/org/example/demo/Results.fxml");
+        URL fxmlLocation = getClass().getResource("/org/example/demo/ResultsPage.fxml");
         if (fxmlLocation == null) {
-            throw new RuntimeException("FXML file not found at /org/example/demo/Results.fxml");
+            throw new RuntimeException("FXML file not found at /org/example/demo/ResultsPage.fxml");
         }
         System.out.println("FXML Location: " + fxmlLocation);
 
