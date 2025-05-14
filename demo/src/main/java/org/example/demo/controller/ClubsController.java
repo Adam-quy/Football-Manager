@@ -25,6 +25,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -35,6 +36,9 @@ public class ClubsController implements Initializable {
     private GridPane team_container;
 
     private final TeamService teamService = new TeamService();
+
+    public ClubsController() throws SQLException {
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -129,6 +133,15 @@ public class ClubsController implements Initializable {
     private void loadTeams() {
         // Lấy danh sách các đội bóng
         List<Team> teams = teamService.getStandingsData();
+//        System.out.println("Retrieved " + teams.size() + " teams from database");
+//
+//        if (teams.isEmpty()) {
+//            System.err.println("No teams were retrieved from the database!");
+//            Label errorLabel = new Label("No club data available");
+//            errorLabel.getStyleClass().add("error-label");
+//            team_container.getChildren().add(errorLabel);
+//            return;
+//        }
 
         // Số cột cố định trong GridPane
         int numCols = 3;

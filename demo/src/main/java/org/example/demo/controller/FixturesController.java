@@ -1,5 +1,9 @@
 package org.example.demo.controller;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.example.demo.models.Match;
 import org.example.demo.utils.MatchService;
 import javafx.fxml.FXML;
@@ -17,6 +21,7 @@ import javafx.scene.layout.VBox;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -24,12 +29,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-@Controller
+//@Controller
 public class FixturesController implements Initializable{
     @FXML
     private ScrollPane Calendar;
-    @Autowired
-    private MatchService matchService;
+//    @Autowired
+    private MatchService matchService = new MatchService();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -176,6 +181,33 @@ public class FixturesController implements Initializable{
                info, venueBox, spacer, quickViewBox
         );
 
+        row.setOnMouseClicked(event -> openMatchResult(match));
+
         return row;
+    }
+
+    private void openMatchResult(Match match) {
+        try {
+            // Tải FXML
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/demo/MatchResultPage.fxml"));
+            Parent root = loader.load();
+
+            // Lấy controller và truyền thông tin trận đấu
+            MatchResultController controller = loader.getController();
+            controller.loadMatchData(match);
+
+            // Tạo scene mới
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/css/MatchResult.css").toExternalForm());
+
+            // Hiển thị trong cửa sổ mới
+            Stage stage = new Stage();
+            stage.setTitle("Chi tiết trận đấu - " + match.getHomeTeam() + " vs " + match.getAwayTeam());
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Hiển thị thông báo lỗi nếu cần
+        }
     }
 }

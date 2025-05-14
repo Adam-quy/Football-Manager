@@ -10,16 +10,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import java.net.URL;
-@SpringBootApplication
-@ComponentScan(basePackages = {"org.example.demo"})
+//@SpringBootApplication
+//@ComponentScan(basePackages = {"org.example.demo"})
 public class TestFixturesPage extends Application {
-    private ApplicationContext springContext;
-
-    @Override
-    public void init() {
-        // Khởi tạo Spring context
-        springContext = SpringApplication.run(TestFixturesPage.class);
-    }
+//    private ApplicationContext springContext;
+//
+//    @Override
+//    public void init() {
+//        // Khởi tạo Spring context
+//        springContext = SpringApplication.run(TestFixturesPage.class);
+//    }
     @Override
     public void start(Stage stage) throws Exception {
         URL fxmlLocation = getClass().getResource("/org/example/demo/FixturesPage.fxml");
@@ -29,7 +29,7 @@ public class TestFixturesPage extends Application {
         System.out.println("FXML Location: " + fxmlLocation);
 
         FXMLLoader loader = new FXMLLoader(fxmlLocation);
-        loader.setControllerFactory(springContext::getBean);
+//        loader.setControllerFactory(springContext::getBean);
         Parent root = loader.load();
 
         Scene scene = new Scene(root);

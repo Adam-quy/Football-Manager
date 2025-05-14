@@ -11,7 +11,6 @@ public class Team {
         return this.name;
     }
 
-
     public String getLogoPath() {
         return this.logoPath;
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 800">
+    <defs>
+        <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="600" y1="25" x2="600" y2="777">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="650" y1="25" x2="650" y2="777">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.2"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="700" y1="25" x2="700" y2="777">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.1"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#a)" d="M0,400L48,377.3C96,355,192,309,288,309.3C384,309,480,355,576,373.3C672,391,768,373,864,373.3C960,373,1056,391,1152,400C1248,409,1344,409,1392,408.7L1440,408L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/>
+    <path fill="url(#b)" d="M0,600L48,566.7C96,533,192,467,288,434.7C384,403,480,403,576,408.7C672,415,768,427,864,448C960,469,1056,501,1152,501.3C1248,501,1344,469,1392,453.3L1440,437L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/>
+    <path fill="url(#c)" d="M0,800L48,800C96,800,192,800,288,746.7C384,693,480,587,576,560C672,533,768,587,864,624C960,661,1056,683,1152,661.3C1248,640,1344,576,1392,544L1440,512L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/>
+</svg>
